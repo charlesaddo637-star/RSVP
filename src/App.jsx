@@ -30,7 +30,7 @@ export default function App() {
   <input type="number" value={Number} onChange={(e)=>setNumber(e.target.value)} required min="1"/>
   <label>Dietary preferences:</label>
   <input type="text" value={Pref} onChange={(e)=>{setPref(e.target.value)}} />
-  <label>Are you bringing additional guests?<input type="checkbox" value={Check} onChange={(e)=>{setCheck(e.target.value)}}/></label>
+  <label>Are you bringing additional guests?<input className="additional" type="checkbox" value={Check} onChange={(e)=>{setCheck(e.target.value)}}/></label>
   <span><button type="submit"><span className="gradient-text">Send RSVP</span></button></span>
   </form>
   {Submitted && <>
@@ -38,7 +38,7 @@ export default function App() {
   <p>Email:{Submitted.email}</p>
   <p>Number Of Attendees:{Submitted.number}</p>
   <p>Dietary preferences:{Submitted.preference}</p>
-  <p>Additional Guests:{Submitted.additional}</p>
+  <p >Additional Guests:{Submitted.additional}</p>
   </>}
   </>
 }

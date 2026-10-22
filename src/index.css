@@ -1,7 +1,6 @@
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display:grid;
+  grid-template-columns: 1fr;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 0.4em;
@@ -9,7 +8,7 @@ form {
   border-radius: 25px;
   transition: .4s ease-in-out;
   width:80vw;
-  height: 98vh;
+  height:90vh;
   color:aquamarine
 }
 form:hover {
@@ -127,4 +126,9 @@ button:active {
 span{
     display:flex;
     justify-content:center;
+}
+.additional{
+    display:inline;
+    width:3vw;
+    height:3vh;
 }
